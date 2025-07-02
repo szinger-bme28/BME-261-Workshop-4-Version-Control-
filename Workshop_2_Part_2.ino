@@ -26,12 +26,12 @@ void loop() {
     analogWrite(Green, 0);
     analogWrite(Blue, 0);
   } 
-  
-  else {
+
+  else if (Environment >= Dark && Environment <= Bright) {
     analogWrite(Red, 0);
     analogWrite(Green, 0);
     analogWrite(Blue, 120); 
-  }
-
+}
+  
   delay(100);
 }
